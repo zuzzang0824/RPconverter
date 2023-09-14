@@ -1,19 +1,9 @@
 @charset "utf-8";
 
-@font-face {
-  font-family: "DungGeunMo";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   padding: 2rem 1rem;
   height: 100vh;
   overflow: hidden;
-  font-family: "DungGeunMo";
-  font-family: "Spiegel";
 }
 
 h2 {
@@ -21,7 +11,7 @@ h2 {
   margin-bottom: 0.6rem;
 }
 
-input[type="text"] {
+input[type="number"] {
   all: unset;
   border: 1px solid #000;
   border-radius: 3px;
@@ -30,9 +20,8 @@ input[type="text"] {
 }
 
 p {
+  position: absolute;
   font-size: 1.8rem;
-  margin-top: 2rem;
-  margin-bottom: 7rem;
 }
 
 button {
@@ -44,8 +33,24 @@ button {
   height: 2rem;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #0ac8b9;
+}
+
 table {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 0.5rem;
+}
+
+h3 {
+  margin-top: 5rem;
 }

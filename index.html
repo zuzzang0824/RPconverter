@@ -8,25 +8,36 @@
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
     />
     <title>리그오브레전드 RP 변환기</title>
+    <!-- reset -->
     <link rel="stylesheet" href="./minireset.css" />
+    <!-- style -->
     <link rel="stylesheet" href="./common.css" />
+    <!-- jQuery -->
+    <script defer src="./jquery-3.6.0.min.js"></script>
+    <!-- script -->
+    <script defer src="./script.js"></script>
   </head>
   <body>
-    <form action="post">
+    <form name="container">
       <label for="input1">
         <h2>변환할 RP 입력</h2>
-        <input type="text" name="rp" id="input1" />
+        <input type="number" id="input1" />
         <button type="submit">변환</button>
-        <p>1,000₩</p>
+        <p></p>
       </label>
 
       <label for="input2">
-        <h2>변환할 ₩ 입력</h2>
-        <input type="text" name="won" id="input2" />
+        <h2 style="margin-top: 7rem">변환할 ₩ 입력</h2>
+        <input type="number" id="input2" />
         <button type="submit">변환</button>
-        <p>975RP</p>
+        <p></p>
       </label>
     </form>
+
+    <h3>
+      이 페이지는 1RP = 약 10원의 기본 충전 금액만을 계산합니다. 충전 금액에
+      따라 제공되는 보너스 RP는 포함되지 않습니다.
+    </h3>
 
     <table>
       <tr>
@@ -35,13 +46,33 @@
       </tr>
 
       <tr>
-        <td>975RP</td>
-        <td>10,000원</td>
+        <td>480RP</td>
+        <td>4,900원</td>
       </tr>
 
       <tr>
-        <td>1350RP</td>
-        <td>15,000원</td>
+        <td>980RP</td>
+        <td>9,900원</td>
+      </tr>
+
+      <tr>
+        <td>1,425RP</td>
+        <td>14,000원</td>
+      </tr>
+
+      <tr>
+        <td>3,700RP</td>
+        <td>35,000원</td>
+      </tr>
+
+      <tr>
+        <td>7,200RP</td>
+        <td>65,000원</td>
+      </tr>
+
+      <tr>
+        <td>11,800RP</td>
+        <td>99,900원</td>
       </tr>
     </table>
   </body>
